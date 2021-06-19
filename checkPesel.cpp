@@ -21,7 +21,11 @@ int main () {
         sum = sum % 10;
     } 
     
-    if (10 - sum == (numberCheck[10] - '0')) {
+    if (sum) {
+        sum = 10 - sum;
+    }
+
+    if (sum == (numberCheck[10] - '0')) {
         std::cout << "Pesel number it's correct!" << '\n';
     } else {
         std::cout << "Pesel number it's not correct" << '\n';
